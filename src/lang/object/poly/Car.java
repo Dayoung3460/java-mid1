@@ -1,4 +1,4 @@
-package poly;
+package lang.object.poly;
 
 public class Car {
     public void move() {

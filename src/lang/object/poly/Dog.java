@@ -1,4 +1,4 @@
-package poly;
+package lang.object.poly;
 
 public class Dog {
     public void sound() {

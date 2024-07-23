@@ -1,4 +1,4 @@
-package poly;
+package lang.object.poly;
 
 public class ObjectPolyExample2 {
     public static void main(String[] args) {
@@ -12,6 +12,6 @@ public class ObjectPolyExample2 {
     }
 
     private static void size(Object[] objects) {
-        System.out.println("object size: " + objects.length);
+        System.out.println("lang.object size: " + objects.length);
     }
 }

@@ -1,4 +1,4 @@
-package poly;
+package lang.object.poly;
 
 public class ObjectPolyExample1 {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class ObjectPolyExample1 {
     }
 
     private static void action(Object object) {
-//        object.sound();
+//        lang.object.sound();
 
         if (object instanceof Dog dog) {
             dog.sound();

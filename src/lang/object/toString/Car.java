@@ -1,4 +1,4 @@
-package toString;
+package lang.object.toString;
 
 public class Car {
     private String carName;
