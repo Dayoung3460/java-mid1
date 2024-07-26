@@ -25,5 +25,7 @@ public class StringBuilderMain1_1 {
         // 작업 다 끝나면 불변인 String으로 바꿔주면 됨
         String string = sb.toString();
         System.out.println(string);
+
+        // 자바가 최적화를 해주기 때문에 간단한 연산은 String써도 괜찮음
     }
 }
