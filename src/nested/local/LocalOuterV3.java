@@ -7,7 +7,9 @@ public class LocalOuterV3 {
 
     public Printer process(int paramVar) {
         // 지역 변수
-        int localVar = 1;
+        // effectively final = 사실상 final
+        // 지역 클래스에서 접근하고 있는 지역 변수는 final이여야 햠.
+         int localVar = 1;
 
         class LocalPrinter implements Printer{
             int value = 0;
@@ -54,7 +56,7 @@ public class LocalOuterV3 {
             // 2. localVar: 지역 변수 캡쳐로 인해서 가지고 있던 필드
             // 3. paramVar: 지역 변수 캡쳐로 인해서 가지고 있던 필드
             // 4. LocalOuterV3$1LocalPrinter.this$0: printer는 내부 클래스이므로 외부 클래스를 참조하기 위한 필드.
-            // 2 ~ 4는 자바가 내부에서 만들어 사용하는 필드들
+            // 2 ~ 4는 자바가 내부에서 만들어 사용하는 필드들. final임
             System.out.println(declaredField);
         }
     }
