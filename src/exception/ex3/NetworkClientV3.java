@@ -23,6 +23,7 @@ public class NetworkClientV3 {
     public void send(String data) throws SendExceptionV3 {
         if(sendError) {
             throw new SendExceptionV3(data, "sending data failed");
+//            throw new RuntimeException("ex");
         }
 
         System.out.println(address + " data sending: " + data);
